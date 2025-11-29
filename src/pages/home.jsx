@@ -9,7 +9,6 @@ const classes = [
   { id: 3, title: "Corporate Flow", duration: 30, level: "All Levels", image: "/assets/images/meditation3.jpg" },
   { id: 3, title: "Corporate Flow", duration: 30, level: "All Levels", image: "/assets/images/meditation3.jpg" },
 ];
-git 
 const testimonials = [
   { id: 1, name: "Courtney Henry", text: "This app changed my mornings—I feel calmer and more focused than ever." },
   { id: 2, name: "Arlene McCoy", text: "I struggled with sleep for years, but now I fall asleep within minutes." },

@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 function ProgressTracker() {
-  const completed = 3; // demo
-  const total = 10;
+  const [completed, setCompleted] = useState(0);
+  const total = 10; // total meditations or can be dynamic
+
+  useEffect(() => {
+    const done = JSON.parse(localStorage.getItem("completedMeditations")) || [];
+    setCompleted(done.length);
+  }, []);
 
   const percent = (completed / total) * 100;
 
