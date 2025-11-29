@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Calm Mind",
+    "duration": 10,
+    "pack": "Sleep",
+    "image": "/assets/images/meditation1.jpg",
+    "audio": "/assets/audio/calm-mind.mp3"
+  },
+  {
+    "id": 2,
+    "title": "Stress Relief",
+    "duration": 15,
+    "pack": "Anxiety",
+    "image": "/assets/images/meditation2.jpg",
+    "audio": "/assets/audio/stress-relief.mp3"
+  },
+  {
+    "id": 2,
+    "title": "Stress Relief",
+    "duration": 15,
+    "pack": "Anxiety",
+    "image": "/assets/images/meditation2.jpg",
+    "audio": "/assets/audio/stress-relief.mp3"
+  },
+  {
+    "id": 2,
+    "title": "Stress Relief",
+    "duration": 15,
+    "pack": "Anxiety",
+    "image": "/assets/images/meditation2.jpg",
+    "audio": "/assets/audio/stress-relief.mp3"
+  },
+  {
+    "id": 2,
+    "title": "Stress Relief",
+    "duration": 15,
+    "pack": "Anxiety",
+    "image": "/assets/images/meditation2.jpg",
+    "audio": "/assets/audio/stress-relief.mp3"
+  }
+]
