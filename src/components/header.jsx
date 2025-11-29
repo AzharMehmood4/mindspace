@@ -13,7 +13,7 @@ function Header({ title = "MindSpace" }) {
     <header className="bg-green-600 text-white py-4 px-6 flex justify-between items-center shadow-md">
       <div>
         <h1 className="text-2xl font-bold">{title}</h1>
-        <p className="text-sm">Meditation & Mindfulness</p>
+        <p className="text-sm">Meditation & Mindfulnes</p>
       </div>
       <button
         onClick={handleLogout}

@@ -1,7 +1,6 @@
 import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "./components/navbar";
-import LandingPage from "./pages/landingpage";
 import Home from "./pages/home";
 import MeditationPlayer from "./pages/meditationplayer";
 import Profile from "./pages/profile";
@@ -23,7 +22,7 @@ export default function App() {
       <Navbar />
       <main className="pt-24"> {/* leave space for sticky navbar */}
         <Routes>
-          <Route path="/" element={<LandingPage />} />
+          <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
 
@@ -31,8 +30,8 @@ export default function App() {
           <Route path="/home" element={
             <PrivateRoute><Home /></PrivateRoute>
           } />
-          <Route path="/meditation" element={
-            <PrivateRoute><Home /></PrivateRoute>
+          <Route path="/meditationplayer" element={
+            <PrivateRoute><MeditationPlayer /></PrivateRoute>
           } />
           <Route path="/player/:id" element={
             <PrivateRoute><MeditationPlayer /></PrivateRoute>
