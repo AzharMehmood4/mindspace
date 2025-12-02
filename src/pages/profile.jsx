@@ -1,107 +1,3 @@
-// import React, { useEffect, useState } from "react";
-// import ProfileCard from "../components/profileCard";
-// import manifest from "../audiomanifast.json";
-
-// function Profile() {
-//   const [completedMeditations, setCompletedMeditations] = useState([]);
-//   const [username, setUsername] = useState(""); // new state for username
-
-//   // Load completed meditations and username from localStorage
-//   useEffect(() => {
-//     const done = JSON.parse(localStorage.getItem("completedMeditations")) || [];
-//     setCompletedMeditations(
-//       manifest.filter((m) => done.includes(m.id))
-//     );
-
-//     const storedUsername = localStorage.getItem("username") || "User";
-//     setUsername(storedUsername);
-//   }, []);
-
-//   return (
-//     <div className="min-h-screen bg-green-50 py-8">
-//       <h1 className="text-3xl font-bold text-green-600 text-center mb-2">
-//         Welcome, {username}!
-//       </h1>
-
-//       <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
-//         {/* Profile Card */}
-//         <ProfileCard username={username} /> {/* optionally pass username */}
-
-//         {/* Stats and Recent Activity */}
-//         <div className="bg-white rounded-lg shadow p-6">
-//           <h2 className="text-xl font-bold mb-4">Meditation Stats</h2>
-//           <div className="mb-6">
-//             <p>
-//               Total Meditations Completed:{" "}
-//               <span className="font-bold">{completedMeditations.length}</span>
-//             </p>
-//             <p>
-//               Total Time Meditating:{" "}
-//               <span className="font-bold">
-//                 {completedMeditations.reduce((sum, m) => sum + (m.duration || 0), 0)}{" "}
-//                 min
-//               </span>
-//             </p>
-//             <div className="w-full bg-gray-200 h-4 rounded mt-2">
-//               <div
-//                 className="bg-green-500 h-4 rounded"
-//                 style={{
-//                   width: `${(completedMeditations.length / manifest.length) * 100}%`,
-//                 }}
-//               ></div>
-//             </div>
-//             <p className="text-sm text-gray-500 mt-1">Progress towards goal</p>
-//           </div>
-
-//           <h2 className="text-xl font-bold mb-4">Recent Meditations</h2>
-//           <ul className="space-y-2">
-//             {completedMeditations
-//               .slice(-5) // show last 5 completed
-//               .map((m) => (
-//                 <li
-//                   key={m.id}
-//                   className="flex justify-between p-2 bg-green-50 rounded"
-//                 >
-//                   <span>{m.title}</span>
-//                   <span className="text-gray-600">{m.duration} min</span>
-//                 </li>
-//               ))}
-//           </ul>
-//         </div>
-//       </div>
-
-//       {/* Completed Meditations Full List */}
-//       {completedMeditations.length > 0 && (
-//         <div className="max-w-5xl mx-auto mt-12">
-//           <h2 className="text-2xl font-bold mb-4 text-green-600">All Completed Meditations</h2>
-//           <div className="grid md:grid-cols-3 gap-4">
-//             {completedMeditations.map((m) => (
-//               <div
-//                 key={m.id}
-//                 className="bg-white rounded-lg shadow p-4 flex flex-col items-center"
-//               >
-//                 <img
-//                   src={m.image || "/assets/images/meditation-placeholder.jpg"}
-//                   alt={m.title}
-//                   className="w-full h-32 object-cover rounded mb-2"
-//                 />
-//                 <h3 className="font-bold text-lg">{m.title}</h3>
-//                 <p className="text-gray-600 text-sm">{m.duration} min</p>
-//                 <p className="text-gray-400 text-xs">{m.pack}</p>
-//               </div>
-//             ))}
-//           </div>
-//         </div>
-//       )}
-//     </div>
-//   );
-// }
-
-// export default Profile;
-
-
-
-
 import React, { useEffect, useState } from "react";
 import manifest from "../audiomanifast.json";
 import { auth } from "../firebase";
@@ -109,10 +5,11 @@ import { auth } from "../firebase";
 function Profile() {
   const [completedMeditations, setCompletedMeditations] = useState([]);
   const [username, setUsername] = useState("User");
-  const [email, setEmail] = useState(""); // track logged-in email
+  // track logged-in email
+  const [email, setEmail] = useState(""); 
 
   useEffect(() => {
-    // Load completed meditations from localStorage
+    // Load completed meditations
     const done = JSON.parse(localStorage.getItem("completedMeditations")) || [];
     setCompletedMeditations(manifest.filter((m) => done.includes(m.id)));
 
