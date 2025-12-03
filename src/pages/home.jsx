@@ -165,6 +165,7 @@ export default function home() {
           <div>
             <p>4517 Washington Ave, Manchester, Kentucky 39495</p>
             <p>sara.cruz@example.com</p>
+            <p>facebook.com</p>
             <p>(907) 555-0101</p>
           </div>
         </div>
