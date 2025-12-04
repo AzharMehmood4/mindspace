@@ -164,12 +164,9 @@ export default function home() {
           </div>
           <div>
             <p>4517 Washington Ave, Manchester, Kentucky 39495</p>
-            <p>sara.cruz@example.com</p>
+            <p>azhar@example.com</p>
             <p>facebook.com</p>
-            <p>facebook.com</p>
-            <p>facebook.com</p>
-            <p>Linkdin.com</p>
-            <p>(907) 555-0101</p>
+            <p>03016011122</p>
           </div>
         </div>
         <p className="text-center mt-6 text-gray-400">© 2025 MindSpace. All Rights Reserved.</p>
