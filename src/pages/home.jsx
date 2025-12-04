@@ -170,6 +170,7 @@ export default function home() {
             <p>03016011122</p>
             <p>03016011122</p>
             <p>03016011122</p>
+            <p>03016011122</p>
           </div>
         </div>
         <p className="text-center mt-6 text-gray-400">© 2025 MindSpace. All Rights Reserved.</p>
