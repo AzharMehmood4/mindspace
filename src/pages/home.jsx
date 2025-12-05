@@ -4,10 +4,10 @@ import { Heart, PlayCircle, Users } from "lucide-react";
 
 // Dummy data
 const classes = [
-  { id: 1, title: "Vinyasa", duration: 45, level: "Intermediate", image: "/assets/images/meditation1.jpg" },
-  { id: 2, title: "Hatha", duration: 50, level: "Beginner", image: "/assets/images/meditation2.jpg" },
-  { id: 3, title: "Corporate Flow", duration: 30, level: "All Levels", image: "/assets/images/meditation3.jpg" },
-  { id: 3, title: "Corporate Flow", duration: 30, level: "All Levels", image: "/assets/images/meditation3.jpg" },
+  { id: 1, title: "Vinyasa", duration: 45, level: "Intermediate", image: "https://imgs.search.brave.com/X_JBkzc7YUXPeWahSU9C09Hgb5lkDK295VJ8taTtuQg/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMjkv/MzIxLzkwNS9zbWFs/bC9haS1nZW5lcmF0/aXZlLW9mLWEtbWFu/LXByYWN0aWNpbmct/bWluZGZ1bG5lc3Mt/YW5kLW1lZGl0YXRp/b24taW4tYS1wZWFj/ZWZ1bC1uYXR1cmFs/LWVudmlyb25tZW50/LXNvbnktYTdzLXJl/YWxpc3RpYy1pbWFn/ZS11bHRyYS1oZC1o/aWdoLWRlc2lnbi12/ZXJ5LWRldGFpbGVk/LWZyZWUtcGhvdG8u/anBn" },
+  { id: 2, title: "Hatha", duration: 50, level: "Beginner", image: "https://imgs.search.brave.com/tNv9auLR--4WpnWFI7DirUQi2ZBvr8b9LcxGt8RkKYg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTQy/MTQxOTIyNC9waG90/by9tZWRpdGF0aW9u/LWNhbG0tYW5kLWFm/cmljYW4td29tYW4t/c2l0dGluZy1hbG9u/ZS1hbmQtZmVlbGlu/Zy1taW5kZnVsLWFu/ZC1mcmVlLXdoaWxl/LWRvaW5nLWEud2Vi/cD9hPTEmYj0xJnM9/NjEyeDYxMiZ3PTAm/az0yMCZjPWlBZ1BH/cjEwa1lmV3k4UWZO/cEdxVV9fR0VHRHpw/T1Y0Tms4cTY4clFm/NWM9" },
+  { id: 3, title: "Corporate Flow", duration: 30, level: "All Levels", image: "https://imgs.search.brave.com/zw54XMHSK8LsI_pw4fud6apyXMiBIhXHV5lrYmnfteI/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWdp/eC5idXN0bGUuY29t/L3VwbG9hZHMvaW1h/Z2UvMjAyNC8zLzEy/L2RkMDk0YTk2LWEy/OWYtNGEyYi04MzMz/LTc0YTM4ZmI5YzJj/Ny12ci1pbi1tZWRp/dGF0aW9uYXJ0Ym9h/cmQtMS5qcGc_dz0z/OTQmaD0yNjQmZml0/PWNyb3AmY3JvcD1m/YWNlcyZkcHI9Mg" },
+  { id: 4, title: "Flow", duration: 30, level: "All Levels", image: "https://imgs.search.brave.com/NT7tonOQu6ELV7Y4twq0td52wZZ5p1g_1ENOSzNpruw/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9odW1hbi1oZWFk/LXdpdGgtZ2xvd2lu/Zy1uZXVyb25zLWJy/YWluLWVzb3Rlcmlj/LW1lZGl0YXRpb24t/Y29uY2VwdC1jb25u/ZWN0aW9uLXdpdGgt/b3RoZXItd29ybGRz/Z2VuZXJhdGl2ZS1h/aV84NDEyMjktNTMu/anBnP3NlbXQ9YWlz/X2h5YnJpZCZ3PTc0/MCZxPTgw" },
 ];
 const testimonials = [
   { id: 1, name: "Courtney Henry", text: "This app changed my mornings—I feel calmer and more focused than ever." },
@@ -78,7 +78,7 @@ export default function home() {
         <div className="flex flex-wrap justify-center gap-6">
           {classes.map((cls) => (
             <div key={cls.id} className="bg-white rounded-lg shadow w-64 overflow-hidden">
-              <img src="https://imgs.search.brave.com/X_JBkzc7YUXPeWahSU9C09Hgb5lkDK295VJ8taTtuQg/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMjkv/MzIxLzkwNS9zbWFs/bC9haS1nZW5lcmF0/aXZlLW9mLWEtbWFu/LXByYWN0aWNpbmct/bWluZGZ1bG5lc3Mt/YW5kLW1lZGl0YXRp/b24taW4tYS1wZWFj/ZWZ1bC1uYXR1cmFs/LWVudmlyb25tZW50/LXNvbnktYTdzLXJl/YWxpc3RpYy1pbWFn/ZS11bHRyYS1oZC1o/aWdoLWRlc2lnbi12/ZXJ5LWRldGFpbGVk/LWZyZWUtcGhvdG8u/anBn" alt={cls.title} className="h-40 w-full object-cover" />
+              <img src={cls.image} alt={cls.title} className="h-40 w-full object-cover" />
               <div className="p-4">
                 <h3 className="font-bold text-lg">{cls.title}</h3>
                 <p className="text-gray-500 text-sm">{cls.level} | {cls.duration} min</p>
@@ -162,7 +162,7 @@ export default function home() {
             </button>
           </div>
           <div>
-            <p>4517 Washington Ave, Manchester, Kentucky 39495</p>
+            <p>4517 F-7 islamabad stret 14</p>
             <p>azhar@example.com</p>
             <p>facebook.com</p>
             <p>03016011122</p>
