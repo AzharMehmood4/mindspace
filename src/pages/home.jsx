@@ -25,8 +25,7 @@ export default function home() {
           <div className="md:w-1/2">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">LIVE WITH CALM</h1>
             <p className="text-gray-700 mb-6">
-              Join live & on-demand classes, guided programs, and mindful practices.
-              Beginner friendly to advanced. Try 7 days free.
+              Access guided meditations, breathing exercises, and daily wellness tools all in one place. Stay consistent and track your progress effortlessly.
             </p>
             <button className="bg-green-600 text-white px-6 py-3 rounded-md hover:bg-green-700 transition">
               Get Started
