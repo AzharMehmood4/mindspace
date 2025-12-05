@@ -35,13 +35,12 @@ export default function Navbar() {
             <div className="text-xs text-gray-500 dark:text-gray-300">Meditation & Mindfulness</div>
           </div>
         </Link>
-
+    
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-6">
           <Link className={linkClass("/home")} to="/home">Home</Link>
           <Link className={linkClass("/meditation")} to="/meditation">Meditation</Link>
           <Link className={linkClass("/profile")} to="/profile">Profile</Link>
-
           {isLoggedIn ? (
             <button onClick={handleLogout} className="ml-2 bg-green-600 text-white px-4 py-1 rounded-full hover:bg-green-700 transition">Logout</button>
           ) : (
