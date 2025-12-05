@@ -24,6 +24,10 @@ export default function home() {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-8 p-8">
           <div className="md:w-1/2">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">LIVE WITH CALM</h1>
+            <p className="text-gray-700 mb-6">
+              Join live & on-demand classes, guided programs, and mindful practices.
+              Beginner friendly to advanced. Try 7 days free.
+            </p>
             <button className="bg-green-600 text-white px-6 py-3 rounded-md hover:bg-green-700 transition">
               Get Started
             </button>
