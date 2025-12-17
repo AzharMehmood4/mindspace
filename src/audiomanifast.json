@@ -4,7 +4,7 @@
     "title": "Calm Mind",
     "duration": 10,
     "pack": "Sleep",
-    "image": "/assets/images/meditation1.jpg",
+    "image": "https://i0.wp.com/ehe.health/wp-content/uploads/2020/11/Stress-Relief.jpg?resize=1080%2C675&ssl=1",
     "audio": "/assets/audio/calm-mind.mp3"
   },
   {
@@ -12,31 +12,31 @@
     "title": "Stress Relief",
     "duration": 15,
     "pack": "Anxiety",
-    "image": "/assets/images/meditation2.jpg",
+    "image": "https://drplus.com.sg/wp-content/uploads/2023/11/stress-management.jpeg",
     "audio": "/assets/audio/stress-relief.mp3"
   },
   {
-    "id": 2,
+    "id": 3,
     "title": "Stress Relief",
     "duration": 15,
     "pack": "Anxiety",
-    "image": "/assets/images/meditation2.jpg",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo4OJb5mGAAUQl4tm1DKreJtinBNnBcGsXrA&s",
     "audio": "/assets/audio/stress-relief.mp3"
   },
   {
-    "id": 2,
+    "id": 4,
     "title": "Stress Relief",
     "duration": 15,
     "pack": "Anxiety",
-    "image": "/assets/images/meditation2.jpg",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeMSbs_LnlEGKI1xR4-FHK9N7-VyK4dDXXmw&s",
     "audio": "/assets/audio/stress-relief.mp3"
   },
   {
-    "id": 2,
+    "id": 5,
     "title": "Stress Relief",
     "duration": 15,
     "pack": "Anxiety",
-    "image": "/assets/images/meditation2.jpg",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu1DMaMIKVEA36ct1Y449DEAs8lB0X8nwnXQ&s",
     "audio": "/assets/audio/stress-relief.mp3"
   }
 ]

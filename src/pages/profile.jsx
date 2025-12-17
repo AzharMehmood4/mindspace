@@ -60,7 +60,7 @@ function Profile() {
           <div className="relative w-24 h-24 mx-auto mb-4">
             <img
               src={profileImage}
-              alt="User Avatar"
+              alt="upload your Avatar"
               className="w-24 h-24 rounded-full object-cover"
             />
             {/* Pin icon */}
