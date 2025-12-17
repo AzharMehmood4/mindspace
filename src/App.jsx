@@ -7,6 +7,8 @@ import Meditation from "./pages/meditation";
 import Profile from "./pages/profile";
 import Login from "./pages/login";
 import Signup from "./pages/signup";
+import YogaPlayer from "./pages/yogaplayer";
+import Yoga from "./pages/yoga";
 import { auth } from "./firebase";
 
 /**
@@ -36,6 +38,15 @@ export default function App() {
             path="/player/:id"
             element={<PrivateRoute><MeditationPlayer/></PrivateRoute>}
           />
+          <Route 
+          path="/yoga" 
+          element={<PrivateRoute><Yoga /></PrivateRoute>} 
+          />
+          <Route 
+          path="/yogaplayer/:id" 
+          element={<PrivateRoute><YogaPlayer /></PrivateRoute>} 
+          />
+    
           <Route
             path="/profile"
             element={<PrivateRoute><Profile /></PrivateRoute>}

@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import Navbar from "../components/navbar";
 import MeditationCard from "../components/meditationcard";
 import ProgressTracker from "../components/progresstracker";
 import PackFilter from "../components/packfilter";
 import manifest from "../audiomanifast.json"; // your meditation data
 
-export default function meditation() {
+export default function Meditation() {
   const [selectedPack, setSelectedPack] = useState("All");
   const [searchTerm, setSearchTerm] = useState("");
   const [levelFilter, setLevelFilter] = useState("All");

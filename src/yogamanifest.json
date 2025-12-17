@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Morning Yoga Flow",
+    "description": "Start your day with this 20-minute energizing flow.",
+    "duration": 20,
+    "level": "Beginner",
+    "video": "/videos/morning-flow.mp4",
+    "audio": "/audio/morning-flow.mp3"
+  },
+  {
+    "id": 2,
+    "title": "Evening Relax Yoga",
+    "description": "Unwind your day with this calming 15-minute routine.",
+    "duration": 15,
+    "level": "All",
+    "video": "/videos/evening-relax.mp4",
+    "audio": "/audio/evening-relax.mp3"
+  }
+]
