@@ -24,7 +24,7 @@ export default function Yoga() {
         </button>
       </section>
 
-      {/* Why Yoga Section */}
+      {/* Why Yoga  */}
       <section className="max-w-7xl mx-auto py-12 px-6">
         <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
           Why Practice Yoga?
@@ -45,7 +45,7 @@ export default function Yoga() {
         </div>
       </section>
 
-      {/* Yoga Sessions Grid */}
+      {/* Yoga Sessions */}
       <section className="max-w-5xl mx-auto py-12 px-6">
         <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">Our Yoga Sessions</h2>
         <div className="grid md:grid-cols-2 gap-6">

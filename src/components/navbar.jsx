@@ -41,6 +41,7 @@ export default function Navbar() {
           <Link className={linkClass("/home")} to="/home">Home</Link>
           <Link className={linkClass("/meditation")} to="/meditation">Meditation</Link>
           <Link className={linkClass("/yoga")} to="/yoga">Yoga</Link>
+          <Link className={linkClass("/classes")} to="/classes">Classes</Link>
           <Link className={linkClass("/profile")} to="/profile">Profile</Link>
           {isLoggedIn ? (
             <button onClick={handleLogout} className="ml-2 bg-green-600 text-white px-4 py-1 rounded-full hover:bg-green-700 transition">Logout</button>
@@ -66,6 +67,7 @@ export default function Navbar() {
             <Link className={`${linkClass("/home")} block w-full py-2`} to="/home" onClick={() => setMenuOpen(false)}>Home</Link>
             <Link className={`${linkClass("/meditation")} block w-full py-2`} to="/meditation" onClick={() => setMenuOpen(false)}>Meditation</Link>
             <Link className={`${linkClass("/yoga")} block w-full py-2`} to="/yoga" onClick={() => setMenuOpen(false)}>Yoga</Link>
+            <Link className={`${linkClass("/classes")} block w-full py-2`} to="/classes" onClick={() => setMenuOpen(false)}>Classes</Link>
             <Link className={`${linkClass("/profile")} block w-full py-2`} to="/profile" onClick={() => setMenuOpen(false)}>Profile</Link>
 
             {isLoggedIn ? (

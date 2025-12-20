@@ -22,6 +22,7 @@ function MeditationCard({ meditation }) {
         <h3 className="font-bold text-lg mb-2">{meditation.title}</h3>
         <p className="text-gray-600 mb-2">{meditation.duration} min</p>
         <p className="text-gray-500 text-sm">{meditation.pack}</p>
+        <p className="text-green-500 text-sm">{meditation.level}</p>
       </div>
     </div>
   );
