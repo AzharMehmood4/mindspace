@@ -2,19 +2,19 @@
   {
     "id": 1,
     "title": "Morning Yoga Flow",
-    "description": "Start your day with this 20‑minute energizing flow.",
-    "duration": 20,
+    "description": "Start your day with this 20-minute energizing flow.",
+    "duration": 10,
     "level": "Beginner",
-    "video": "https://sample‑videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
-    "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix‑Song‑1.mp3"
+    "video": "https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+    "audio": "https://d1cy5zxxhbcbkk.cloudfront.net/guided-meditations/Body-Scan-Meditation.mp3"
   },
   {
     "id": 2,
     "title": "Evening Relax Yoga",
-    "description": "Unwind with a calming 15‑minute routine.",
-    "duration": 15,
+    "description": "Unwind with a calming 15-minute routine.",
+    "duration": 11,
     "level": "All",
-    "video": "https://sample‑videos.com/video123/mp4/720/big_buck_bunny_720p_5mb.mp4",
-    "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix‑Song‑2.mp3"
+    "video": "https://storage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+    "audio": "https://d1cy5zxxhbcbkk.cloudfront.net/guided-meditations/02_Breath_Sound_Body_Meditation.mp3"
   }
 ]

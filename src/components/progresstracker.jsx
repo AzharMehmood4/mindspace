@@ -10,6 +10,7 @@ function ProgressTracker() {
   }, []);
 
   const percent = (completed / total) * 100;
+  https://www.headspace.com/meditation
 
   return (
     <div className="bg-white p-4 rounded-lg shadow mb-6">

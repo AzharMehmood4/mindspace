@@ -101,7 +101,6 @@ const reviews = [
 ];
 
 export default function Home() {
-  
   const navigate = useNavigate();
 
   const handleStartClass = (cls) => {
@@ -158,7 +157,10 @@ export default function Home() {
 
         <div className="grid md:grid-cols-3 gap-6 text-center">
           {/* Card 1 */}
-          <div className="bg-white p-6 rounded-lg shadow flex flex-col items-center">
+          <div
+            className="bg-white p-6 rounded-lg shadow flex flex-col items-center 
+                            transform transition-transform duration-300 hover:scale-105 hover:shadow-xl"
+          >
             <Heart className="w-10 h-10 text-blue-500 mb-3" />
             <h3 className="font-bold text-lg mb-2">Personalized Programs</h3>
             <p className="text-gray-600">
@@ -167,7 +169,10 @@ export default function Home() {
           </div>
 
           {/* Card 2 */}
-          <div className="bg-white p-6 rounded-lg shadow flex flex-col items-center">
+          <div
+            className="bg-white p-6 rounded-lg shadow flex flex-col items-center 
+                            transform transition-transform duration-300 hover:scale-105 hover:shadow-xl"
+          >
             <PlayCircle className="w-10 h-10 text-green-500 mb-3" />
             <h3 className="font-bold text-lg mb-2">Live & On-Demand</h3>
             <p className="text-gray-600">
@@ -176,7 +181,10 @@ export default function Home() {
           </div>
 
           {/* Card 3 */}
-          <div className="bg-white p-6 rounded-lg shadow flex flex-col items-center">
+          <div
+            className="bg-white p-6 rounded-lg shadow flex flex-col items-center 
+                            transform transition-transform duration-300 hover:scale-105 hover:shadow-xl"
+          >
             <Users className="w-10 h-10 text-purple-500 mb-3" />
             <h3 className="font-bold text-lg mb-2">Community & Support</h3>
             <p className="text-gray-600">
@@ -188,36 +196,39 @@ export default function Home() {
 
       {/* Classes Section */}
       <section className="max-w-7xl mx-auto py-12 px-8">
-      <h2 className="text-3xl font-bold mb-6 text-center">
-        Classes For Every Need
-      </h2>
-      <div className="flex flex-wrap justify-center gap-6">
-        {classes.map((cls) => (
-          <div
-            key={cls.id}
-            className="bg-white rounded-lg shadow w-64 overflow-hidden"
-          >
-            <img
-              src={cls.image}
-              alt={cls.title}
-              className="h-40 w-full object-cover"
-            />
-            <div className="p-4">
-              <h3 className="font-bold text-lg">{cls.title}</h3>
-              <p className="text-gray-500 text-sm">
-                {cls.level} | {cls.duration} min
-              </p>
-              <button
-                onClick={() => handleStartClass(cls)}
-                className="mt-2 w-full bg-green-600 text-white py-2 rounded hover:bg-green-700 transition"
-              >
-                Join Class
-              </button>
+        <h2 className="text-3xl font-bold mb-6 text-center">
+          Classes For Every Need
+        </h2>
+        <div className="flex flex-wrap justify-center gap-6">
+          {classes.map((cls) => (
+            <div
+              key={cls.id}
+              className="bg-white rounded-lg shadow w-64 overflow-hidden 
+                        transform transition-transform duration-300 hover:scale-105 hover:shadow-xl"
+            >
+              <img
+                src={cls.image}
+                alt={cls.title}
+                className="h-40 w-full object-cover transition-transform duration-300 hover:scale-110"
+              />
+              <div className="p-4">
+                <h3 className="font-bold text-lg">{cls.title}</h3>
+                <p className="text-gray-500 text-sm">
+                  {cls.level} | {cls.duration} min
+                </p>
+                <button
+                  onClick={() => handleStartClass(cls)}
+                  className="mt-2 w-full bg-green-600 text-white py-2 rounded 
+                            hover:bg-green-700 transition-colors duration-300"
+                >
+                  Join Class
+                </button>
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
-    </section>
+          ))}
+        </div>
+      </section>
+
       {/* Simple Steps Section */}
       <section className="bg-green-50 py-12 px-8">
         <h2 className="text-3xl font-bold text-center mb-8">
@@ -350,24 +361,63 @@ export default function Home() {
       {/* Pricing */}
       <section className="bg-gray-800 text-white py-12 px-8">
         <h2 className="text-3xl font-bold mb-8 text-center">
-          Start Your Mindful Journey
+          Start Your Journey with Guided Meditation
         </h2>
+
+        <p className="text-center text-gray-300 max-w-2xl mx-auto mb-10">
+          Choose a guided meditation plan that fits your lifestyle and begin
+          your path to calmness, focus, and inner peace.
+        </p>
+
         <div className="flex flex-wrap justify-center gap-6">
-          <div className="bg-gray-700 p-6 rounded-lg shadow w-64 text-center hover:bg-green-600 transition">
-            <h3 className="font-bold text-xl mb-2">Master Plan</h3>
-            <p className="mb-2">Limited sessions</p>
-            <p className="text-2xl font-bold mb-4">$50 / month</p>
-            <button className="bg-green-600 py-2 px-4 rounded hover:bg-green-700 transition">
-              Choose Plan
+          {/* Free Plan */}
+          <div className="bg-gray-700 p-6 rounded-lg shadow w-64 text-center transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl hover:scale-105">
+            <h3 className="font-bold text-xl mb-2">Free Guided Plan</h3>
+            <p className="mb-2">Beginner-friendly guided sessions</p>
+            <p className="text-2xl font-bold mb-4">$0 / month</p>
+
+            <button
+              onClick={() => navigate("/guided-meditation")}
+              className="bg-green-600 py-2 px-5 rounded hover:bg-green-700 transition"
+            >
+              Start Free
             </button>
           </div>
-          <div className="bg-gray-700 p-6 rounded-lg shadow w-64 text-center hover:bg-green-600 transition">
-            <h3 className="font-bold text-xl mb-2">Premium Plan</h3>
-            <p className="mb-2">Unlock 500+ meditations</p>
-            <p className="text-2xl font-bold mb-4">$90 / month</p>
-            <button className="bg-green-600 py-2 px-4 rounded hover:bg-green-700 transition">
+
+          {/* Master Plan */}
+          <div
+            className="bg-gray-700 p-6 rounded-lg shadow w-64 text-center
+    transition-all duration-300 ease-in-out
+    hover:-translate-y-2 hover:shadow-2xl hover:scale-105"
+          >
+            <h3 className="font-bold text-xl mb-2">Master Plan</h3>
+            <p className="mb-2">Limited guided sessions</p>
+            <p className="text-2xl font-bold mb-4">$50 / month</p>
+            <a
+              href="https://www.headspace.com/subscriptions"
+              rel="noopener noreferrer"
+              className="inline-block bg-green-600 mt-5 py-2 px-4 rounded hover:bg-green-700 transition"
+            >
               Choose Plan
-            </button>
+            </a>
+          </div>
+
+          {/* Premium Plan */}
+          <div
+            className="bg-gray-700 p-6 rounded-lg shadow w-64 text-center
+    transition-all duration-300 ease-in-out
+    hover:-translate-y-2 hover:shadow-2xl hover:scale-105"
+          >
+            <h3 className="font-bold text-xl mb-2">Premium Plan</h3>
+            <p className="mb-2">500+ guided meditations</p>
+            <p className="text-2xl font-bold mb-4">$90 / month</p>
+            <a
+              href="https://www.calm.com/freetrial/plans"
+              rel="noopener noreferrer"
+              className="inline-block bg-green-600 mt-5 py-2 px-4 rounded hover:bg-green-700 transition"
+            >
+              Choose Plan
+            </a>
           </div>
         </div>
       </section>
@@ -376,16 +426,15 @@ export default function Home() {
       <footer className="bg-gray-900 text-white py-12 px-8">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-6">
           <div>
-            <h4 className="font-bold mb-2">Get In Touch</h4>
-            <p>Have questions or need assistance? We’re here to help!</p>
-            <input
-              type="email"
-              placeholder="Your email address"
-              className="mt-2 p-2 rounded text-gray-900 w-full md:w-64"
-            />
-            <button className="bg-green-600 py-2 px-4 rounded mt-2 hover:bg-green-700 transition">
-              Subscribe
-            </button>
+            <h4 className="font-bold mb-4 text-xl">
+              Chat with Your AI Meditation Instructor
+            </h4>
+            <p className="mb-6 text-gray-300 leading-relaxed">
+              Need guidance on your meditation journey? Whether you're looking
+              for a quick breathing exercise, help managing stress, or tips to
+              deepen your practice, Aria — our calm and compassionate AI
+              instructor — is here to support you anytime.
+            </p>
           </div>
           <div>
             <p>4517 F-7 islamabad stret 14</p>

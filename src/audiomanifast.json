@@ -2,91 +2,101 @@
   {
     "id": 1,
     "title": "Calm Mind",
-    "duration": 10,
+    "duration": 6,
     "pack": "Sleep",
     "level": "Beginner",
     "image": "https://i0.wp.com/ehe.health/wp-content/uploads/2020/11/Stress-Relief.jpg?resize=1080%2C675&ssl=1",
-    "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+    "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+    "video": "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
   },
   {
     "id": 2,
     "title": "Deep Sleep Journey",
-    "duration": 20,
+    "duration": 7,
     "pack": "Sleep",
     "level": "Intermediate",
     "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
-    "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"
+    "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
+    "video": "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
   },
   {
     "id": 3,
     "title": "Nighttime Relaxation",
-    "duration": 15,
+    "duration": 5,
     "pack": "Sleep",
     "level": "Beginner",
     "image": "https://images.unsplash.com/photo-1517841905240-472988babdf9",
-    "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3"
+    "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3",
+    "video": "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"
   },
   {
     "id": 4,
     "title": "Sleepy Waves",
-    "duration": 12,
+    "duration": 5,
     "pack": "Sleep",
     "level": "Beginner",
     "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
-    "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3"
+    "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3",
+    "video": "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4"
   },
   {
     "id": 5,
     "title": "Stress Relief",
-    "duration": 15,
+    "duration": 6,
     "pack": "Anxiety",
     "level": "Intermediate",
     "image": "https://drplus.com.sg/wp-content/uploads/2023/11/stress-management.jpeg",
-    "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3"
+    "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3",
+    "video": "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
   },
   {
     "id": 6,
     "title": "Mind Reset",
-    "duration": 18,
+    "duration": 4.5,
     "pack": "Anxiety",
     "level": "Advanced",
     "image": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2",
-    "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3"
+    "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3",
+    "video": "https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
   },
   {
     "id": 7,
     "title": "Letting Go",
-    "duration": 12,
+    "duration": 7,
     "pack": "Anxiety",
     "level": "Beginner",
     "image": "https://images.unsplash.com/photo-1526256262350-7da7584cf5eb",
-    "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-7.mp3"
+    "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-7.mp3",
+    "video": "https://storage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
   },
   {
     "id": 8,
     "title": "Calm Breath",
-    "duration": 10,
+    "duration": 5.2,
     "pack": "Anxiety",
     "level": "Beginner",
     "image": "https://images.unsplash.com/photo-1508672019048-805c876b67e2",
-    "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3"
+    "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3",
+    "video": "https://storage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4"
   },
   {
     "id": 9,
     "title": "Tranquil Mind",
-    "duration": 20,
+    "duration": 6.2,
     "pack": "Sleep",
     "level": "Intermediate",
     "image": "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0",
-    "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3"
+    "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3",
+    "video": "https://storage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4"
   },
   {
     "id": 10,
     "title": "Anxiety Relief Flow",
-    "duration": 15,
+    "duration": 8,
     "pack": "Anxiety",
     "level": "Intermediate",
     "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
-    "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-10.mp3"
+    "audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-10.mp3",
+    "video": "https://storage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4"
   }
 ]
