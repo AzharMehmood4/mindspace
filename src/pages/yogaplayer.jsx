@@ -163,27 +163,44 @@ export default function YogaPlayer() {
         )}
 
         {/* --- VIDEO SECTION --- */}
-        {session.video && (
-          <div className="mb-6">
-            <h2 className="font-semibold mb-2 text-gray-700">Video</h2>
-            <video ref={videoRef} src={session.video} className="w-full rounded" />
-            <div className="flex items-center gap-4 mt-2">
-              <button onClick={() => skipVideo(-10)}><FaBackward /></button>
-              <button onClick={handleVideoPlayPause}>{isVideoPlaying ? <FaPause /> : <FaPlay />}</button>
-              <button onClick={() => skipVideo(10)}><FaForward /></button>
-              <button onClick={toggleVideoMute}>{isVideoMuted ? <FaVolumeMute /> : <FaVolumeUp />}</button>
-              <span>{formatTime(videoTime)} / {formatTime(videoDuration)}</span>
-            </div>
-            <input
-              type="range"
-              min={0}
-              max={videoDuration || 0}
-              value={videoTime}
-              onChange={handleVideoSlider}
-              className="w-full mt-1"
-            />
-          </div>
-        )}
+{session.youtube ? (
+  <div className="mb-6">
+    <h2 className="font-semibold mb-2 text-gray-700">Video</h2>
+    <div className="w-full h-64">
+      <iframe
+        className="w-full h-full rounded"
+        src={session.youtube} // <-- unique YouTube embed link for each session
+        title={session.title}
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+      ></iframe>
+    </div>
+  </div>
+) : (
+  session.video && (
+    <div className="mb-6">
+      <h2 className="font-semibold mb-2 text-gray-700">Video</h2>
+      <video ref={videoRef} src={session.video} className="w-full rounded" />
+      <div className="flex items-center gap-4 mt-2">
+        <button onClick={() => skipVideo(-10)}><FaBackward /></button>
+        <button onClick={handleVideoPlayPause}>{isVideoPlaying ? <FaPause /> : <FaPlay />}</button>
+        <button onClick={() => skipVideo(10)}><FaForward /></button>
+        <button onClick={toggleVideoMute}>{isVideoMuted ? <FaVolumeMute /> : <FaVolumeUp />}</button>
+        <span>{formatTime(videoTime)} / {formatTime(videoDuration)}</span>
+      </div>
+      <input
+        type="range"
+        min={0}
+        max={videoDuration || 0}
+        value={videoTime}
+        onChange={handleVideoSlider}
+        className="w-full mt-1"
+      />
+    </div>
+  )
+)}
+
 
         <div className="mt-4 text-sm text-gray-600">
           <p>Duration: {session.duration || "—"} minutes</p>

@@ -11,6 +11,7 @@ import YogaPlayer from "./pages/yogaplayer";
 import Yoga from "./pages/yoga";
 import Classes from "./pages/Classes"
 import GuidedMeditation from "./pages/GuidedMeditation";
+import ClassPlayer from "./pages/ClassPlayer";
 import { auth } from "./firebase";
 
 /**
@@ -32,6 +33,7 @@ export default function App() {
           <Route path="/signup" element={<Signup />} />
 
           {/* Protected routes */}
+          <Route path="/classplayer/:id" element={<ClassPlayer />} />
           <Route
             path="/meditation"
             element={<PrivateRoute><Meditation /></PrivateRoute>}

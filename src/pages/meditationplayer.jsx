@@ -24,13 +24,6 @@ export default function MeditationPlayer() {
   const [isMuted, setIsMuted] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
-
-  // VIDEO STATE
-  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
-  const [isVideoMuted, setIsVideoMuted] = useState(true);
-  const [videoTime, setVideoTime] = useState(0);
-  const [videoDuration, setVideoDuration] = useState(0);
-
   // AUDIO EFFECT
   useEffect(() => {
     const audio = audioRef.current;
@@ -45,23 +38,6 @@ export default function MeditationPlayer() {
     return () => {
       audio.removeEventListener("timeupdate", updateTime);
       audio.removeEventListener("loadedmetadata", setMeta);
-    };
-  }, []);
-
-  // VIDEO EFFECT
-  useEffect(() => {
-    const video = videoRef.current;
-    if (!video) return;
-
-    const updateTime = () => setVideoTime(video.currentTime);
-    const setMeta = () => setVideoDuration(video.duration);
-
-    video.addEventListener("timeupdate", updateTime);
-    video.addEventListener("loadedmetadata", setMeta);
-
-    return () => {
-      video.removeEventListener("timeupdate", updateTime);
-      video.removeEventListener("loadedmetadata", setMeta);
     };
   }, []);
 
@@ -90,33 +66,6 @@ export default function MeditationPlayer() {
     audio.currentTime = e.target.value;
     setCurrentTime(e.target.value);
   };
-
-  // VIDEO FUNCTIONS
-  const toggleVideoPlay = () => {
-    const video = videoRef.current;
-    if (!video) return;
-    if (isVideoPlaying) video.pause();
-    else video.play();
-    setIsVideoPlaying(!isVideoPlaying);
-  };
-
-  const toggleVideoMute = () => {
-    const video = videoRef.current;
-    video.muted = !isVideoMuted;
-    setIsVideoMuted(!isVideoMuted);
-  };
-
-  const skipVideo = sec => {
-    const video = videoRef.current;
-    video.currentTime = Math.min(Math.max(0, video.currentTime + sec), videoDuration);
-  };
-
-  const handleVideoSliderChange = e => {
-    const video = videoRef.current;
-    video.currentTime = e.target.value;
-    setVideoTime(e.target.value);
-  };
-
   const formatTime = sec => {
     const m = Math.floor(sec / 60);
     const s = Math.floor(sec % 60);
@@ -145,43 +94,32 @@ export default function MeditationPlayer() {
       </button>
 
       <div className="bg-white rounded-lg shadow p-6">
+
         {/* VIDEO SECTION */}
-        {meditation.video && (
+        {meditation.video ? (
           <div className="mb-6">
             <h2 className="text-xl font-semibold mb-2 text-gray-700">Video</h2>
+            <div className="w-full h-64">
+              <iframe
+                className="w-full h-full rounded-lg"
+                src={meditation.video}
+                title={meditation.title}
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        ) : (
+          meditation.video && (
             <video
               ref={videoRef}
               src={meditation.video}
               className="w-full h-64 rounded-lg object-cover"
               muted
             />
-            <div className="flex items-center gap-3 mt-3">
-              <button onClick={() => skipVideo(-10)}>
-                <FaBackward />
-              </button>
-              <button onClick={toggleVideoPlay}>
-                {isVideoPlaying ? <FaPause /> : <FaPlay />}
-              </button>
-              <button onClick={() => skipVideo(10)}>
-                <FaForward />
-              </button>
-              <button onClick={toggleVideoMute}>
-                {isVideoMuted ? <FaVolumeMute /> : <FaVolumeUp />}
-              </button>
-              <input
-                type="range"
-                min={0}
-                max={videoDuration || 0}
-                value={videoTime}
-                onChange={handleVideoSliderChange}
-                className="flex-1"
-              />
-              <span className="text-sm">{formatTime(videoTime)}</span>
-              <span className="text-sm">{formatTime(videoDuration)}</span>
-            </div>
-          </div>
+          )
         )}
-
 
         <h1 className="text-2xl font-bold mb-2">{meditation.title}</h1>
         <p className="text-gray-600 mb-4">{meditation.pack}</p>

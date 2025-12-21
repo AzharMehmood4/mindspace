@@ -5,7 +5,7 @@
     "description": "Start your day with this 20-minute energizing flow.",
     "duration": 10,
     "level": "Beginner",
-    "video": "https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+    "youtube": "https://www.youtube.com/embed/H1LIElhBaM8",
     "audio": "https://d1cy5zxxhbcbkk.cloudfront.net/guided-meditations/Body-Scan-Meditation.mp3"
   },
   {
@@ -14,7 +14,7 @@
     "description": "Unwind with a calming 15-minute routine.",
     "duration": 11,
     "level": "All",
-    "video": "https://storage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+    "youtube": "https://www.youtube.com/embed/zr1wc1q_s04",
     "audio": "https://d1cy5zxxhbcbkk.cloudfront.net/guided-meditations/02_Breath_Sound_Body_Meditation.mp3"
   }
 ]

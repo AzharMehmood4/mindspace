@@ -63,7 +63,9 @@ export default function Classes() {
         >
           &larr; Back to Classes
         </button>
-        <h1 className="text-4xl md:text-5xl font-bold mb-6">{selectedClass.title}</h1>
+        <h1 className="text-4xl md:text-5xl font-bold mb-6">
+          {selectedClass.title}
+        </h1>
         <img
           src={selectedClass.image}
           alt={selectedClass.title}
@@ -71,10 +73,18 @@ export default function Classes() {
         />
         <div className="grid md:grid-cols-2 gap-8 mb-8">
           <div className="space-y-2">
-            <p><strong>Duration:</strong> {selectedClass.duration} min</p>
-            <p><strong>Level:</strong> {selectedClass.level}</p>
-            <p><strong>Instructor:</strong> {selectedClass.instructor}</p>
-            <p><strong>Type:</strong> {selectedClass.type}</p>
+            <p>
+              <strong>Duration:</strong> {selectedClass.duration} min
+            </p>
+            <p>
+              <strong>Level:</strong> {selectedClass.level}
+            </p>
+            <p>
+              <strong>Instructor:</strong> {selectedClass.instructor}
+            </p>
+            <p>
+              <strong>Type:</strong> {selectedClass.type}
+            </p>
           </div>
           <div>
             <p className="mb-4">{selectedClass.description}</p>
@@ -85,57 +95,61 @@ export default function Classes() {
             </ul>
           </div>
         </div>
-        <a
-          href={selectedClass.videoUrl}
-          target="_blank"
-          rel="noopener noreferrer"
+        <button
+          onClick={() =>
+            (window.location.href = `/classplayer/${selectedClass.id}`)
+          }
           className="inline-block bg-green-600 text-white py-3 px-8 rounded hover:bg-green-700 transition text-lg font-semibold"
         >
           Start Class
-        </a>
+        </button>
       </div>
     );
   }
-
 
   return (
     <div className="bg-white min-h-screen py-12 px-4 md:px-8">
       {/* Hero */}
       <section className="max-w-5xl mx-auto mb-12 text-center">
-        <h2 className="text-4xl md:text-5xl font-bold mb-4">Explore Our Classes</h2>
+        <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          Explore Our Classes
+        </h2>
         <p className="text-gray-700 text-lg md:text-xl mb-6">{introText}</p>
         <p className="text-gray-600 md:text-lg">
-          Whether you are looking to start a new fitness journey, improve your flexibility, 
-          or practice mindfulness, our curated classes are tailored to help you achieve your goals.
+          Whether you are looking to start a new fitness journey, improve your
+          flexibility, or practice mindfulness, our curated classes are tailored
+          to help you achieve your goals.
         </p>
       </section>
       {/* Why Choose Our Classes */}
-        <section className="max-w-6xl mx-auto mb-12">
+      <section className="max-w-6xl mx-auto mb-12">
         <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
-            Why Choose Our Classes
+          Why Choose Our Classes
         </h2>
         <div className="grid md:grid-cols-3 gap-8 text-center">
-            <div className="bg-green-50 p-6 rounded shadow hover:shadow-lg transition transform hover:scale-105">
+          <div className="bg-green-50 p-6 rounded shadow hover:shadow-lg transition transform hover:scale-105">
             <h3 className="text-xl font-semibold mb-2">Expert Instructors</h3>
             <p className="text-gray-600">
-                Learn from certified professionals with years of experience guiding students at all levels.
+              Learn from certified professionals with years of experience
+              guiding students at all levels.
             </p>
-            </div>
-            <div className="bg-green-50 p-6 rounded shadow hover:shadow-lg transition transform hover:scale-105">
+          </div>
+          <div className="bg-green-50 p-6 rounded shadow hover:shadow-lg transition transform hover:scale-105">
             <h3 className="text-xl font-semibold mb-2">Flexible Learning</h3>
             <p className="text-gray-600">
-                Attend classes anytime, anywhere. Perfect for busy schedules and self-paced learning.
+              Attend classes anytime, anywhere. Perfect for busy schedules and
+              self-paced learning.
             </p>
-            </div>
-            <div className="bg-green-50 p-6 rounded shadow hover:shadow-lg transition transform hover:scale-105">
+          </div>
+          <div className="bg-green-50 p-6 rounded shadow hover:shadow-lg transition transform hover:scale-105">
             <h3 className="text-xl font-semibold mb-2">Holistic Benefits</h3>
             <p className="text-gray-600">
-                Strengthen your body, calm your mind, and improve overall well-being through our diverse classes.
+              Strengthen your body, calm your mind, and improve overall
+              well-being through our diverse classes.
             </p>
-            </div>
+          </div>
         </div>
-        </section>
-
+      </section>
 
       {/* Filters */}
       <div className="flex flex-col sm:flex-row justify-between items-center mb-8 gap-4 max-w-5xl mx-auto">
@@ -161,7 +175,9 @@ export default function Classes() {
       {/* Classes */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
         {filteredClasses.length === 0 && (
-          <p className="text-center text-gray-500 col-span-full">No classes found.</p>
+          <p className="text-center text-gray-500 col-span-full">
+            No classes found.
+          </p>
         )}
         {filteredClasses.map((cls) => (
           <div
@@ -177,7 +193,9 @@ export default function Classes() {
             <div className="p-4">
               <div className="flex justify-between items-center mb-2">
                 <h3 className="text-xl font-semibold">{cls.title}</h3>
-                <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-medium">{cls.level}</span>
+                <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-medium">
+                  {cls.level}
+                </span>
               </div>
               <p className="text-gray-600 mb-2">{cls.duration} min</p>
               <p className="text-gray-500 mb-4">{cls.shortDescription}</p>
