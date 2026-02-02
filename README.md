@@ -1,18 +1,71 @@
-# React + Vite
+# 🧠 MindSpace
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## 🌿 Description
+MindSpace is a web-based mindfulness and wellness application designed to help users improve their mental well-being through guided meditation, relaxation sessions, self-care practices, and an AI-powered chatbot for mental support.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Features
+- 🧘 Guided meditation and relaxation sessions  
+- 💬 AI-powered mental wellness chatbot  
+- 🎨 Clean and responsive user interface  
+- 🔐 Firebase authentication and database  
+- 📱 Mobile-friendly design  
+- 📊 Track your personal progress and improvements  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Tech Stack
+- **Frontend:** React.js  
+- **Styling:** Tailwind CSS  
+- **Backend / Auth:** Firebase  
+- **AI:** Integrated chatbot  
 
-## Use firebase for authentication
+---
+
+## 📸 Screenshots
+
+<img width="1347" height="654" alt="Screenshot from 2026-02-02 21-19-16" src="https://github.com/user-attachments/assets/98dfc56b-b9dc-4474-a2a5-77c06104b242" />
+<img width="1347" height="654" alt="Screenshot from 2026-02-02 21-20-22" src="https://github.com/user-attachments/assets/e40a7d2c-6f36-4d2d-99a1-3788ad20a787" />
+<img width="1347" height="654" alt="Screenshot from 2026-02-02 21-23-56" src="https://github.com/user-attachments/assets/3d587207-6323-4186-b855-46e9398eba37" />
+<img width="1343" height="649" alt="Screenshot from 2026-02-02 21-28-41" src="https://github.com/user-attachments/assets/e60e4d61-a014-4fd7-a7e1-702682af792a" />
+
+
+
+---
+
+## 📌 Future Improvements
+
+- Personalized meditation recommendations  
+- Mood tracking and analytics  
+- Improved AI chatbot responses  
+- User progress dashboard  
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!  
+Feel free to fork this repository and submit a pull request.
+
+---
+
+## 📦 Installation & Setup
+
+Follow the steps below to run the project locally:
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/mindspace.git
+
+# Navigate to the project directory
+cd mindspace
+
+# Install dependencies
+npm install
+
+# Run the development server
+npm run dev
