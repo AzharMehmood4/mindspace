@@ -59,7 +59,7 @@ Follow the steps below to run the project locally:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/mindspace.git
+git clone https://github.com/AzharMehmood4/mindspace.git
 
 # Navigate to the project directory
 cd mindspace
